@@ -1,4 +1,4 @@
-function renderingPageTemplate(contentJSON, res) {
+function renderPage(contentJSON, res) {
     const content = JSON.parse(contentJSON);
     
     res.write(`<html>
@@ -14,4 +14,4 @@ function renderingPageTemplate(contentJSON, res) {
     res.end();
 }
 
-module.exports = renderingPageTemplate;
+module.exports = renderPage;
